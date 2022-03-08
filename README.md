@@ -5,9 +5,9 @@
 
 <br>
 
-<h2 align="center">Precedences</h2>
+<h1 align="center">Precedences</h1>
 
-# Features
+<h2 align="left">Features</h1>
 
 - [x] Admin Panel
 - [x] Relational Model
