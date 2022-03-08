@@ -54,14 +54,16 @@
 
 <h1 align='center'><b>How To Run</b></h1>
 
-First of All go To Project's Directory with  ``~ cd SendResume-Django-master`` No Matters if Your Using Windows or Linux.
+First of All Clone the project from here  `~ git clone https://github.com/shervinbdndev/SendResume-Django.git`
 
-Then Run The Code Below 👇
+Then go To Project's Directory with  ``~ cd SendResume-Django-master`` No Matters if Your Using Windows or Linux.
+
+Run The Code Below 👇
 
 ```python
 ~ python manage.py runserver 3000
 ```
-Then you need to open  ``http://127.0.0.1:3000`` for accessing the website
+After that you need to open  ``http://127.0.0.1:3000`` for accessing the website.
 
 Synchronize your database 👇
 
