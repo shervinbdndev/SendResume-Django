@@ -21,14 +21,11 @@
                     </h2>
                 </div>
                 <div class="card-body">
-                    <div align="center">
-                        <h1>
-                            <b>Bad Request At</b> {{ error }} <br><br>
-                            Error <b>
-                                {% if e404%}{{ e404 }}{% else %}{{ none }}{% endif %}
-                            </b> Not Found
-                        </h1>
-                    </div>
+                    {% if e404%}
+                        {% include 'resume/errors/error404_body.html' %}
+                    {% elif e500 %}
+                        {% include 'resume/errors/error500_body.html' %}
+                    {% endif %}
                 </div>
             </div>
         </div>

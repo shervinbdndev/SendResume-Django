@@ -30,3 +30,5 @@ class SendResumeView(View):
 
 def error404(request : HttpRequest , *args : BadRequest , **argv : BadRequest):
     return render(request=request , template_name='resume/errors/bad_requests.html' , status=404 , context={'error' : str(request).split(':')[1].split("'")[1].split('/')[1] , 'e404' : 404})
+def error500(request : HttpRequest , *args : BadRequest , **argv : BadRequest):
+    return render(request=request , template_name='resume/errors/bad_requests.html' , status=500 , context={'error' : str(request).split(':')[1].split("'")[1].split('/')[1] , 'e404' : 500})
