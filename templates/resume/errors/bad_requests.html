@@ -1,0 +1,36 @@
+{% extends 'resume/base.html' %}
+{% load static %}
+{% block title %}
+    {% if title %}
+        {{ title }}
+    {% else %}
+        {{ none }}
+    {% endif %}
+{% endblock %}
+{% block content %}
+    <div class="page-wrapper bg-dark p-t-100 p-b-50">
+        <div class="wrapper wrapper--w900">
+            <div class="card card-6">
+                <div class="card-heading">
+                    <h2 class="title">
+                        {% if error %}
+                            {{ error }}
+                        {% else %}
+                            {{ none }}
+                        {% endif %}
+                    </h2>
+                </div>
+                <div class="card-body">
+                    <div align="center">
+                        <h1>
+                            <b>Bad Request At</b> {{ error }} <br><br>
+                            Error <b>
+                                {% if e404%}{{ e404 }}{% else %}{{ none }}{% endif %}
+                            </b> Not Found
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
