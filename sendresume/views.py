@@ -3,7 +3,7 @@ from django.urls.base import reverse
 from django.contrib import messages
 from django.views.generic.base import View
 from django.http.request import HttpRequest
-from .forms import SendResumeModelForm
+from .forms import SendResumeModelForm 
 
 
 
