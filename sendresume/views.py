@@ -23,12 +23,3 @@ class SendResumeView(View):
             messages.success(request=request , message='Successfully Sent')
             return redirect(to=reverse(viewname='index'))
         return render(request=request , template_name='resume/resume.html' , context={'resume_model_form' : resume_model_form , 'title' : 'Send Your Resume' , 'header' : 'Apply for job'})
-    
-    
-    
-    
-
-def error404(request : HttpRequest , *args : BadRequest , **argv : BadRequest):
-    return render(request=request , template_name='resume/errors/bad_requests.html' , status=404 , context={'error' : str(request).split(':')[1].split("'")[1].split('/')[1] , 'e404' : 404})
-def error500(request : HttpRequest , *args : BadRequest , **argv : BadRequest):
-    return render(request=request , template_name='resume/errors/bad_requests.html' , status=500 , context={'error' : str(request).split(':')[1].split("'")[1].split('/')[1] , 'e404' : 500})

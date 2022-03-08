@@ -23,51 +23,7 @@
                 <div class="card-body">
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
-                        <div class="form-row">
-                            <div class="name">
-                                {{ resume_model_form.fullname.label_tag }}
-                            </div>
-                            <div class="value">
-                                {{ resume_model_form.fullname }}
-                                {{ resume_model_form.fullname.errors }}
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">
-                                {{ resume_model_form.email.label_tag }}
-                            </div>
-                            <div class="value">
-                                <div class="input-group">
-                                    {{ resume_model_form.email }}
-                                    {{ resume_model_form.email.errors }}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">
-                                {{ resume_model_form.message.label_tag }}
-                            </div>
-                            <div class="value">
-                                <div class="input-group">
-                                    {{ resume_model_form.message }}
-                                    {{ resume_model_form.message.errors }}
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="name">
-                                {{ resume_model_form.cv.label_tag }}
-                            </div>
-                            <div class="value">
-                                <div class="input-group js-input-file">
-                                    {{ resume_model_form.cv }}
-                                    {{ resume_model_form.cv.errors }}
-                                    <label class="label--file" for="file">Choose file</label>
-                                        <span class="input-file__info success"></span>
-                                </div>
-                                <div class="label--desc">Upload your CV/Resume or any other relevant file. Max file size 50 MB</div>
-                            </div>
-                        </div>
+                        {% include 'resume/fields.html' %}
                         <div class="card-footer">
                             <button class="btn btn--radius-2 btn--blue-2" type="submit">Send Application</button>
                         </div>
