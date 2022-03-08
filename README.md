@@ -45,6 +45,10 @@
 
 <h1 align='center'><b>How To Run</b></h1>
 
+First of All go To Project's Directory with  ``cd SendResume-Django-master``
+
+Then Run The Code Below 👇
+
 ```python
 python manage.py runserver 3000
 ```
