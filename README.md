@@ -45,11 +45,11 @@
 
 <h1 align='center'><b>Installation</b></h1>
 
-<b>Linux</b>:
+<b>Linux</b>: 
 Run The Code Below 👇
 ```
 ~ sudo apt install docker && sudo apt install docker-compose
-```
+``` 
 
 <br>
 
