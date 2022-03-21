@@ -45,9 +45,11 @@
 
 <h1 align='center'><b>Installation</b></h1>
 
-If Youre on <b>Windows</b>:
-Install Docker From <a href="https://docs.docker.com/desktop/windows/install/"><b>Here</b></a>
-Install wsl From <a href="">
+<b>Linux</b>:
+Run The Code Below 👇
+```
+~ sudo apt install docker && sudo apt install docker-compose
+```
 
 <br>
 
