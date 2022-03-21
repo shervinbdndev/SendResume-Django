@@ -45,10 +45,9 @@
 
 <h1 align='center'><b>Installation</b></h1>
 
-```py
-~ pip3 install django
-~ pip3 install -U django
-```
+If Youre on <b>Windows</b>:
+Install Docker From <a href="https://docs.docker.com/desktop/windows/install/"><b>Here</b></a>
+Install wsl From <a href="">
 
 <br>
 
@@ -60,19 +59,8 @@ Then go To Project's Directory with  ``~ cd SendResume-Django-master`` No Matter
 
 Run The Code Below 👇
 
-```python
-~ python manage.py runserver 3000
+```
+~ docker-compose build
+~ docker-compose up
 ```
 After that you need to open  ``http://127.0.0.1:3000`` for accessing the website.
-
-Synchronize your database 👇
-
-```python
-~ python manage.py syncdb
-```
-
-If you want to create Admin 👇
-
-```python
-~ python manage.py createsuperuser
-```
