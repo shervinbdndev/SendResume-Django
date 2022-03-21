@@ -46,7 +46,7 @@
 <h1 align='center'><b>Installation</b></h1>
 
 <b>Linux</b>: 
-Run The Code Below 👇
+Run The Command Below On Terminal 👇
 ```
 ~ sudo apt install docker && sudo apt install docker-compose
 ``` 
@@ -59,7 +59,7 @@ First of All Clone the project from here  `~ git clone https://github.com/shervi
 
 Then go To Project's Directory with  ``~ cd SendResume-Django-master`` No Matters if Your Using Windows or Linux.
 
-Run The Code Below 👇
+Run The Commands Below On Terminal 👇
 
 ```
 ~ docker-compose build
