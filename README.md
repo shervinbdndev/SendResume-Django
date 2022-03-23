@@ -18,6 +18,7 @@
 - [x] Able To Upload CV with Any File Format
 - [x] Responsive Site (Optimization)
 - [x] Backend Security
+- [x] Dockerized
 
 <br>
 
